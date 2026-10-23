@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10162f">
+  <meta name="description" content="Sebuah halaman kecil untuk merayakan 29 tahun seseorang yang istimewa, meski terpisah jarak Depok dan Terengganu.">
+  <title>For you, My Bini ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="stars stars-a"></div><div class="stars stars-b"></div>
+    <div class="moon"></div><div class="glow glow-one"></div><div class="glow glow-two"></div>
+  </div>
+  <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+  <div class="heart-layer" id="heartLayer" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Kembali ke halaman awal"><span class="brand-mark">✦</span> a little universe <span class="brand-heart">♡</span></a>
+    <div class="topbar-note"><span class="status-dot"></span> dibuat dengan penuh rasa</div>
+    <button class="music-control" id="musicToggle" type="button" aria-label="Putar musik">
+      <span class="music-icon" id="musicIcon">♫</span><span id="musicLabel">Putar lagu kita</span>
+    </button>
+    <audio id="backgroundMusic" loop preload="none">
+      <source src="assets/for-you.mp3" type="audio/mpeg">
+    </audio>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> 19 — sebuah hari yang istimewa <span class="eyebrow-line"></span></p>
+        <p class="hero-overline">Untuk seseorang yang sangat special,</p>
+        <h1>Selamat ulang tahun,<br><em>Sayang.</em></h1>
+        <p class="hero-subtitle">it's your day. Dan dari tempat yang jauh ini, ada seorang laki-laki yang diam-diam ikut bersyukur karena semesta pernah mempertemukan kita.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#surat">Buka halaman kecil ini <span>↘</span></a>
+          <button class="btn btn-quiet" id="sprinkleButton" type="button"><span>♡</span> Kirim sedikit cinta</button>
+        </div>
+        <div class="hero-signature"><span class="signature-rule"></span><span>Dari seseorang yang selalu menyayangimu setiap hari</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi dua hati yang terhubung oleh jarak">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="orbit-label label-id"><span class="mini-dot"></span> DEPOK, ID</div>
+        <div class="orbit-label label-my"><span class="mini-dot"></span> TERENGGANU, MY</div>
+        <svg class="connection-line" viewBox="0 0 420 390" aria-hidden="true">
+          <path d="M72 222 C 118 80, 285 70, 343 175" fill="none" stroke="url(#lineGradient)" stroke-width="1.6" stroke-dasharray="4 7"/>
+          <circle cx="72" cy="222" r="4" fill="#f6c6d2"/><circle cx="343" cy="175" r="4" fill="#e8d5a2"/>
+          <defs><linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6c6d2"/><stop offset="1" stop-color="#e8d5a2"/></linearGradient></defs>
+        </svg>
+        <div class="heart-orb heart-orb-left"><span>♡</span></div>
+        <div class="heart-orb heart-orb-right"><span>♥</span></div>
+        <div class="art-center"><span class="tiny-star">✦</span><span class="art-center-text">somewhere<br>between here<br><i>&amp; there</i></span><span class="tiny-star">✧</span></div>
+        <div class="orbit-caption">jarak boleh memisahkan tempat,<br>tapi rasa ini selalu ada untukmu.</div>
+      </div>
+      <a class="scroll-cue" href="#wish" aria-label="Gulir ke bagian berikutnya"><span></span> SCROLL PELAN-PELAN</a>
+    </section>
+
+    <section class="wish section-wrap" id="wish">
+      <div class="section-kicker">01 / HARI INI TENTANG KAMU</div>
+      <div class="wish-grid">
+        <div class="wish-number"><span class="number-29">29</span><span class="number-caption">tahun menjadi<br>kamu yang istimewa</span><span class="number-spark">✧</span></div>
+        <div class="wish-copy">
+          <p class="small-label">Satu tahun lagi, satu bab baru</p>
+          <h2>Semoga hidup selalu memelukmu<br><em>selembut kamu pantas dipeluk.</em></h2>
+          <p>Semoga di usia yang baru ini, hal-hal baik semakin sering menemukanmu. Semoga langkahmu dimudahkan, hatimu lebih tenang, mimpimu makin dekat, dan kamu selalu punya alasan untuk tersenyum bahkan pada hari yang terasa berat.</p>
+          <p>Dan ketika dunia terasa terlalu ramai, semoga kamu tetap ingat bahwa ada seseorang di negara tetangga ini yang mendoakanmu diam-diam, dengan tulus.</p>
+          <div class="wish-signoff">With the warmest thoughts, <span>♡</span></div>
+        </div>
+      </div>
+      <div class="wish-divider"><span>✦</span><span>made of wishes &amp; stardust</span><span>✦</span></div>
+    </section>
+
+    <section class="gallery-section section-wrap" id="kenangan">
+      <div class="section-heading">
+        <div><div class="section-kicker">02 / LITTLE MOMENTS</div><h2>Aduhh, siapa ya ini<br><em>cantik banget...</em></h2></div>
+      </div>
+      <div class="gallery-grid">
+        <button class="photo-card photo-tall" type="button" data-photo="1" aria-label="Buka foto kenangan 1">
+          <span class="photo-frame"><img src="assets/diyana1.jpeg" alt="Foto kenangan pertama" loading="lazy"><span class="photo-placeholder"><span class="placeholder-spark">✧</span><b>foto favoritmu</b><small>assets/foto-1.jpg</small></span><span class="photo-wash"></span></span><span class="photo-caption"><span>01</span> cantik <i>♡</i></span>
+        </button>
+        <button class="photo-card photo-offset" type="button" data-photo="2" aria-label="Buka foto kenangan 2">
+          <span class="photo-frame"><img src="assets/diyana2.jpeg" alt="Foto kenangan kedua" loading="lazy"><span class="photo-placeholder"><span class="placeholder-spark">✧</span><b>momen sederhana</b><small>assets/foto-2.jpg</small></span><span class="photo-wash"></span></span><span class="photo-caption"><span>02</span> cantik jugaa <i>♡</i></span>
+        </button>
+        <button class="photo-card photo-third" type="button" data-photo="3" aria-label="Buka foto kenangan 3">
+          <span class="photo-frame"><img src="assets/diyana4.jpeg" alt="Foto kenangan ketiga" loading="lazy"><span class="photo-placeholder"><span class="placeholder-spark">✧</span><b>versi terbaikmu</b><small>assets/foto-3.jpg</small></span><span class="photo-wash"></span></span><span class="photo-caption"><span>03</span> cantik banget <i>♡</i></span>
+        </button>
+        <button class="photo-card photo-fourth" type="button" data-photo="4" aria-label="Buka foto kenangan 4">
+          <span class="photo-frame"><img src="assets/diyana6.jpeg" alt="Foto kenangan keempat" loading="lazy"><span class="photo-placeholder"><span class="placeholder-spark">✧</span><b>pemandangan favorit</b><small>assets/foto-4.jpg</small></span><span class="photo-wash"></span></span><span class="photo-caption"><span>04</span> masyaallah perempuan siapa ini cantik banget <i>♡</i></span>
+        </button>
+        <button class="photo-card photo-fifth" type="button" data-photo="5" aria-label="Buka foto kenangan 5">
+          <span class="photo-frame"><img src="assets/diyana5.jpeg" alt="Foto kenangan kelima" loading="lazy"><span class="photo-placeholder"><span class="placeholder-spark">✧</span><b>foto yang bikin rindu</b><small>assets/foto-5.jpg</small></span><span class="photo-wash"></span></span><span class="photo-caption"><span>05</span> aduhh bingung soalnya semuanya cantik <i>♡</i></span>
+        </button>
+        <button class="photo-card photo-sixth" type="button" data-photo="6" aria-label="Buka foto kenangan 6">
+          <span class="photo-frame"><img src="assets/diyana7.jpeg" alt="Foto kenangan keenam" loading="lazy"><span class="photo-placeholder"><span class="placeholder-spark">✧</span><b>senyum sekali lagi</b><small>assets/foto-6.jpg</small></span><span class="photo-wash"></span></span><span class="photo-caption"><span>06</span> awww, siapa nii <i>♡</i></span>
+        </button>
+      </div>
+      <p class="gallery-footnote"><span>✦</span> Tekan salah satu foto untuk melihatnya lebih dekat.</p>
+    </section>
+
+    <section class="distance-section section-wrap" id="jarak">
+      <div class="distance-card">
+        <div class="distance-topline"><span class="section-kicker">03 / TWO PLACES, ONE WISH</span><span class="distance-stamp">LDR diaries · vol. 29</span></div>
+        <h2>Dua tempat berbeda,<br><em>satu doa yang sama.</em></h2>
+        <div class="route-visual">
+          <div class="route-place"><span class="route-pin pin-indo">✦</span><b>Depok</b><small>Indonesia</small></div>
+          <div class="route-middle"><div class="route-dash"></div><div class="route-plane">✈</div><div class="distance-number" id="distanceNumber">— km</div><small>perkiraan jarak udara</small></div>
+          <div class="route-place"><span class="route-pin pin-malay">✦</span><b>Terengganu</b><small>Malaysia</small></div>
+        </div>
+        <p class="distance-quote">“Kalau belum bisa berada di tempat yang sama, setidaknya semoga doa-doa baik kita sampai di waktu yang tepat.”</p>
+        <div class="distance-bottom"><span>Depok, Indonesia</span><span class="tiny-heart">♡</span><span>Terengganu, Malaysia</span></div>
+      </div>
+    </section>
+
+    <section class="letter-section section-wrap" id="surat">
+      <div class="letter-intro">
+        <div class="section-kicker">04 / A LETTER FOR YOU</div>
+        <h2>Ada sesuatu yang<br><em>ingin kusampaikan.</em></h2>
+        <p>Ada apa yaa di dalam sini coba kamu buka ya hehe...</p>
+        <button class="btn btn-primary letter-open" id="openLetter" type="button"><span class="envelope-icon">✉</span> Buka surat rahasia <span>↗</span></button>
+        <div class="letter-hint">psst… bacanya pelan-pelan, ya.</div>
+      </div>
+      <div class="letter-illustration" aria-hidden="true">
+        <div class="letter-orbit"></div><div class="envelope-shadow"></div>
+        <div class="envelope"><div class="envelope-back"></div><div class="envelope-paper"><span>untukmu,</span><b>di usia 29</b><i>♡</i></div><div class="envelope-flap"></div><div class="envelope-seal">♡</div></div>
+        <span class="letter-star star-a">✧</span><span class="letter-star star-b">✦</span><span class="letter-star star-c">✧</span>
+      </div>
+    </section>
+
+    <section class="closing-section section-wrap" id="penutup">
+      <div class="closing-stars" aria-hidden="true">✦　✧　⋆　✦　˚</div>
+      <p class="small-label">Sebelum halaman ini berakhir…</p>
+      <h2>Selamat bertambah usia,<br><em>manusia kesayanganku.</em></h2>
+      <p class="closing-copy">Terima kasih sudah hadir sebagai dirimu sendiri. Semoga tahun ke-29 ini membawa lebih banyak tawa, keberanian, ketenangan, dan hal-hal kecil yang membuatmu merasa dicintai oleh kehidupan.</p>
+      <div class="closing-question">Dan bolehkah aku terus mengenalmu, <br>pelan-pelan, tanpa perlu terburu-buru? <span>♡</span></div>
+      <p class="closing-note">Apa pun jawabanmu, hari ini tetap tentang kamu dan semua hal baik yang layak kamu dapatkan.</p>
+      <div class="closing-signature"><span class="signature-line"></span><span>From Your Boyy.</span><span class="signature-line"></span></div>
+      <button class="back-to-top" id="backToTop" type="button">kembali ke atas ↑</button>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>dirangkai dengan rasa ♡</span><span>untuk hari lahirmu yang ke-29</span><span>Depok × Terengganu</span></footer>
+
+  <div class="letter-modal" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="letterTitle" aria-hidden="true">
+    <div class="modal-backdrop" data-close-letter></div>
+    <article class="letter-paper">
+      <button class="modal-close" id="closeLetter" type="button" aria-label="Tutup surat">×</button>
+      <div class="paper-top">A LETTER, JUST FOR YOU <span>♡</span></div>
+      <div class="paper-flower">✿</div>
+      <h2 id="letterTitle">Untuk Sayang,<br><em>di hari ulang tahunmu.</em></h2>
+      <div class="letter-body">
+        <p>Hai, kamu. Selamat ulang tahun, ya. 🤍</p>
+        <p>Aku berharap kamu selalu dikelilingi hal-hal yang membuatmu bahagia, orang-orang yang tulus menyayangimu, dan kesempatan-kesempatan baik yang selama ini kamu tunggu.</p>
+        <p>Aku tahu, dari Indonesia ke Malaysia ada jarak yang nggak bisa begitu saja dihilangkan. Ada waktu yang nggak selalu sama, ada rindu yang kadang cuma bisa disampaikan lewat pesan, dan ada momen ketika kehadiran secara langsung terasa jauh sekali. Tapi hari ini, lewat halaman kecil ini, aku ingin kamu tahu bahwa aku ikut senang bisa mengenalmu.</p>
+        <p>Aku suka caramu menjadi dirimu sendiri. Mungkin aku belum tahu semua cerita tentangmu, belum mengenal semua sisi yang kamu simpan, dan tentu masih banyak hal yang bisa kupelajari tentang kamu. Justru itu yang membuatku ingin mengenalmu lebih jauh bukan dengan terburu-buru, melainkan dengan cara yang nyaman untuk kita berdua.</p>
+        <p>Di harimu ini, semoga kamu nggak terlalu keras pada diri sendiri. Kamu nggak harus selalu kuat, nggak harus selalu punya jawaban, dan nggak perlu membandingkan perjalananmu dengan siapa pun. Kamu boleh beristirahat. Kamu boleh mengubah rencana. Kamu boleh memilih hal-hal yang membuat hati kamu tenang. Semoga kamu selalu ingat betapa berharganya dirimu, bahkan pada hari ketika kamu sendiri sulit melihatnya.</p>
+        <p>Kalau suatu saat kamu lelah, semoga ada tempat untuk bercerita. Kalau suatu hari kamu meragukan diri sendiri, semoga kamu menemukan alasan untuk mencoba lagi. Dan kalau hari ini kamu meniup lilin, semoga salah satu harapanmu adalah untuk lebih bahagia karena kamu benar-benar pantas mendapatkannya.</p>
+        <p>Aku nggak akan menjanjikan hal-hal besar hanya agar terdengar indah. Untuk sekarang, aku cukup ingin hadir dengan tulus, mendengarkanmu, mendukung hal-hal baik yang kamu perjuangkan, dan ikut tersenyum setiap kali ada kabar bahagia darimu. Biar waktu yang mengajarkan kita akan menjadi apa cerita ini nanti.</p>
+        <p>Selamat ulang tahun, Sayang. Semoga Allah selalu melindungimu, hari ini dan seterusnya. Jaga diri baik-baik di sana, ya. Sampai jarak suatu hari terasa lebih dekat, aku titipkan doa dan sedikit rasa hangat dari sini.</p>
+        <p class="letter-last-line">Kamu layak mendapat banyak hal baik.<br>Dan hari ini, aku berharap kamu merasakannya. <span>♡</span></p>
+        <p class="letter-last-line">Sekarang kamu boleh buka barang yang kemarin dahh sampai yaa<br>Love You So Much Sayangg... <span>♡</span></p>
+      </div>
+      <div class="paper-signoff">dengan tulus, <br><em>Boyy</em></div>
+      <div class="paper-bottom">DEPOK, INDONESIA ✦ TERENGGANU, MALAYSIA</div>
+    </article>
+  </div>
+
+  <div class="photo-modal" id="photoModal" role="dialog" aria-modal="true" aria-label="Tampilan foto besar" aria-hidden="true">
+    <div class="modal-backdrop" data-close-photo></div><button class="photo-modal-close" id="closePhoto" type="button" aria-label="Tutup foto">×</button>
+    <img id="largePhoto" src="" alt="Foto kenangan diperbesar"><p id="largePhotoCaption"></p>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite">Satu peluk virtual sedang dikirim ♡</div>
+  <script src="script.js"></script>
+</body>
+</html>
