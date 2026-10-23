@@ -23,6 +23,25 @@
   const distance = Math.round(haversineKm(-6.4025, 106.7942, 5.3302, 103.1408));
   document.getElementById('distanceNumber').textContent = `${distance.toLocaleString('id-ID')} km`;
 
+  // Coba putar musik secara otomatis saat halaman dibuka.
+async function tryAutoplay() {
+  try {
+    await music.play();
+
+    musicToggle.classList.add('is-playing');
+    musicToggle.setAttribute('aria-label', 'Jeda musik');
+    musicIcon.textContent = '♫';
+    musicLabel.textContent = 'Musik sedang diputar';
+
+  } catch (error) {
+    // Jika browser memblokir autoplay,
+    // pengguna masih bisa menekan tombol musik.
+    console.log('Autoplay diblokir oleh browser.');
+  }
+}
+
+window.addEventListener('load', tryAutoplay, { once: true });
+
   // Music browsers often block autoplay. The player therefore starts on the first tap.
   musicToggle.addEventListener('click', async () => {
     if (music.paused) {
