@@ -148,7 +148,7 @@ window.addEventListener('load', tryAutoplay, { once: true });
   document.getElementById('sprinkleButton').addEventListener('click', () => {
     sendHearts(22);
     createPetals(16);
-    showToast('Satu peluk virtual sedang dikirim dari Depok ♡');
+    showToast('Satu peluk virtual sedang dikirim dari Boyy ♡');
   });
 
   // Start with a subtle sprinkle, rather than overwhelming the page.
