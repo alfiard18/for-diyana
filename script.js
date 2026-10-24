@@ -8,7 +8,51 @@
   const toast = document.getElementById('toast');
   const letterModal = document.getElementById('letterModal');
   const photoModal = document.getElementById('photoModal');
-  let toastTimer;
+
+const introScreen = document.getElementById('introScreen');
+const enterWebsite = document.getElementById('enterWebsite');
+
+let toastTimer;
+
+
+/* Membuka pintu masuk menuju halaman ulang tahun */
+if (introScreen && enterWebsite) {
+  enterWebsite.addEventListener('click', () => {
+    // Memulai animasi pintu terbuka
+    introScreen.classList.add('is-opening');
+    enterWebsite.disabled = true;
+
+    // Coba putar musik pada interaksi pertama pengunjung
+    try {
+      const playPromise = music.play();
+
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            musicToggle.classList.add('is-playing');
+            musicToggle.setAttribute('aria-label', 'Jeda musik');
+            musicIcon.textContent = '♫';
+            musicLabel.textContent = 'Musik sedang diputar';
+          })
+          .catch((error) => {
+            console.info(
+              'Musik belum bisa diputar otomatis. Gunakan tombol musik.',
+              error
+            );
+          });
+      }
+    } catch (error) {
+      console.info('Musik belum bisa dimulai.', error);
+    }
+
+    // Menutup layar pembuka setelah animasi pintu selesai
+    window.setTimeout(() => {
+      introScreen.classList.add('is-hidden');
+      document.body.classList.remove('intro-active');
+    }, 1250);
+  });
+}
+
 
   // Approximate city-centre coordinates: Depok, Indonesia and Kuala Terengganu, Malaysia.
   // This is an estimated straight-line distance, not a road/flight itinerary.
